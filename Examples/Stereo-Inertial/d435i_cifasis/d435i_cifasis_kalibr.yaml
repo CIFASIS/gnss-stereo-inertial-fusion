@@ -1,0 +1,95 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+Camera.type: "PinHole"
+
+# Camera calibration and distortion parameters (OpenCV) (equal for both cameras after stereo rectification)
+Camera.fx: 646.0640292142491
+Camera.fy: 642.9758841521934
+Camera.cx: 644.0384763513479
+Camera.cy: 342.13911848202025
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.width: 1280
+Camera.height: 720
+
+# Camera frames per second 
+Camera.fps: 15
+
+# stereo baseline times fx
+Camera.bf: 32.30320146071246 #83.91450569403555
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+loopClosing: 0
+
+# Close/Far threshold. Baseline times.
+ThDepth: 10000000.0 # 35
+
+# Transformation from camera 0 to body-frame (imu)
+# To obtain this tf, just play the bagfile and execute: rosrun tf2_tools echo.py imu left -p 10
+# It is the inverse of the T_cam_imu matrix obtained from Kalibr.
+Tbc: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: f
+   data: [0.99999677, 0.00044967, 0.00250145, -0.00623736,
+          -0.00042542, 0.99995302, -0.00968341, 0.00264364,
+          -0.00250569, 0.00968232, 0.99994999, 0.02871543,
+          0.,  0.,         0.,          1.]
+
+System.UseGlobalMeas: 0
+
+# IMU noise
+IMU.NoiseGyro: 0.000190073002459 #0.011292103054687074 #0.00011292103054687074
+IMU.NoiseAcc: 0.000941374666774 #0.19366268769180487 #0.0019366268769180487
+IMU.GyroWalk: 9.76508687914e-07 #3.6132794408280443e-03 #3.6132794408280443e-06
+IMU.AccWalk: 5.59498264753e-05 #0.020702566216083702 #0.00020702566216083702
+IMU.Frequency: 200
+
+#--------------------------------------------------------------------------------------------
+# Stereo Rectification. Only if you need to pre-rectify the images.
+# Camera.fx, .fy, etc must be the same as in LEFT.P
+#--------------------------------------------------------------------------------------------
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1800
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+

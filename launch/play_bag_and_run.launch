@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <arg name="bagfile"/>
+    <arg name="launchfile" default="$(find ORB_SLAM3)/launch/rosario.launch" />
+    <arg name="settings" default="$(find ORB_SLAM3)/Examples/Stereo-Inertial/rosario_dataset/Rosario_3_0.yaml"/>
+
+    <include file="$(arg launchfile)">
+        <arg name="settings" value="$(arg settings)" />
+    </include>
+    <node pkg="rosbag" type="play" name="rosbag_play" output="screen" required="true" args="--clock -d 5 $(arg bagfile)"/>
+</launch>
+
