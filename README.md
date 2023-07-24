@@ -24,15 +24,16 @@ J. Cremona, J. Civera, E. Kofman, T. Pire, **GNSS-stereo-inertial SLAM for arabl
 
 ```bibtex
 @article{cremona2023gnss,
- author = {Cremona, Javier and Civera, Javier and Kofman, Ernesto and Pire, Taihú},
- title = {GNSS-stereo-inertial SLAM for arable farming},
- journal = {Journal of Field Robotics},
- pages = {},
- keywords = {agricultural robotics, precision agriculture, GNSS-stereo-inertial SLAM, GNSS, GPS},
- year = {2023},
- doi = {},
- url = {},
- eprint = {}
+author = {Cremona, Javier and Civera, Javier and Kofman, Ernesto and Pire, Taihú},
+title = {GNSS-stereo-inertial SLAM for arable farming},
+journal = {Journal of Field Robotics},
+volume = {n/a},
+number = {n/a},
+pages = {},
+keywords = {agricultural robotics, GNSS-stereo-inertial SLAM, precision agriculture},
+doi = {https://doi.org/10.1002/rob.22232},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22232},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rob.22232}
 }
 ```
 
