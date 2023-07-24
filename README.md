@@ -20,7 +20,7 @@ manner, GNSS measurements into the stereo-inertial [ORB-SLAM3](https://github.co
 ## Related publication
 If you use this in some academic work, please cite the related publication:
 
-J. Cremona, J. Civera, E. Kofman, T. Pire, **GNSS-stereo-inertial SLAM for arable farming**. Journal of Field Robotics, 2023. DOI: 
+J. Cremona, J. Civera, E. Kofman, T. Pire, **GNSS-stereo-inertial SLAM for arable farming**. Journal of Field Robotics, 2023. DOI: https://doi.org/10.1002/rob.22232
 
 ```bibtex
 @article{cremona2023gnss,
