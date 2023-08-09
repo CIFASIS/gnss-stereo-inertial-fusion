@@ -18,7 +18,7 @@ manner, GNSS measurements into the stereo-inertial [ORB-SLAM3](https://github.co
 </div>
 
 ## Video
-[<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/3181393/259499562-9e8ff11f-9d21-4cf4-b1cf-b09eefb7ac1b.png" width="50%">](https://www.youtube.com/watch?v=o7Reosq9E0o)
+[<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/3181393/259499562-9e8ff11f-9d21-4cf4-b1cf-b09eefb7ac1b.png">](https://www.youtube.com/watch?v=o7Reosq9E0o)
 
 ## Related publication
 If you use this in some academic work, please cite the related publication:
