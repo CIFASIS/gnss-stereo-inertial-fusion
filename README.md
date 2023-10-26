@@ -42,6 +42,9 @@ eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rob.22232}
 }
 ```
 
+You can find a version of this article on arXiv: [Link](https://arxiv.org/abs/2307.12836)
+
+
 ## License
 This work is licensed [GPLv3 license](LICENSE). For a list of all code/library dependencies (and associated licenses), please see [Dependencies.md](Dependencies.md).
 
