@@ -105,6 +105,13 @@ and add at the end the following line. Replace PATH by the folder where you clon
   ./build_ros.sh
   ```
 
+## Docker
+A Dockerfile has been added to facilitate deployment and execution via Docker containers. Try running:
+
+```
+docker build --rm -t gnss_si:ros_noetic .
+```
+
 
 # Examples
 
