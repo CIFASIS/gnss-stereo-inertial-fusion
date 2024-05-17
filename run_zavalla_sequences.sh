@@ -13,7 +13,7 @@ OUTPUT_DIR=$CURRENT_DIR/output/zavalla_${dt}
 mkdir -p $OUTPUT_DIR
 
 SETTINGS_FILE=$CURRENT_DIR/Examples/Stereo-Inertial/zavalla_2021/zavalla.yaml
-LAUNCH_FILE=$CURRENT_DIR/Examples/ROS/ORB_SLAM3/launch/zavalla.launch
+LAUNCH_FILE=$CURRENT_DIR/Examples/ROS/GNSS_SI/launch/zavalla.launch
 
 trap "exit 1" INT
 

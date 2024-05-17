@@ -12,13 +12,13 @@ function echoUsage()
 {
     echo -e "Usage: $0 [FLAG] ROSBAG\n\
             \t -o path to output folder \n\
-            \t -s path to ORB-SLAM3 yaml configuration file \n\
+            \t -s path to yaml configuration file \n\
             \t -l launchfile
             \t -h help" >&2
 }
 
 SETTINGS_FILE=$CURRENT_DIR/Examples/Stereo-Inertial/rosario_dataset/Rosario_3_0.yaml
-LAUNCH_FILE=$CURRENT_DIR/Examples/ROS/ORB_SLAM3/launch/rosario.launch
+LAUNCH_FILE=$CURRENT_DIR/Examples/ROS/GNSS_SI/launch/rosario.launch
 while getopts "l:s:ho:" opt; do
     case "$opt" in
         s)  case $OPTARG in

@@ -2,8 +2,8 @@
 <launch> 
     <param name="/use_sim_time" value="true"/>
 
-    <arg name="vocabulary" default="/home/jcremona/src/OS3/ORB_SLAM3/Vocabulary/ORBvoc.txt" doc="Vocabulary for DBoW2."/> 
-    <arg name="settings" default="/home/jcremona/src/OS3/ORB_SLAM3/Examples/Stereo-Inertial/rosario_dataset/Rosario_3_0.yaml" doc="System settings."/> 
+    <arg name="vocabulary" default="$(find GNSS_SI)/../../../Vocabulary/ORBvoc.txt" doc="Vocabulary for DBoW2."/> 
+    <arg name="settings" default="$(find GNSS_SI)/../../Stereo-Inertial/rosario_dataset/Rosario_3_0.yaml" doc="System settings."/> 
     <arg name="map_frame_id" default="map"/>
     <arg name="base_link_frame_id" default="base_link"/>
     <node name="orbslam3_gnss_stereo_inertial" pkg="GNSS_SI" type="GNSS_Stereo_Inertial" output="log" args="$(arg vocabulary) $(arg settings) true"> 
