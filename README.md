@@ -125,7 +125,7 @@ Run the system:
 To evaluate the system using the Rosario Dataset, just run:
 
 ```
-./run.sh -s Examples/Stereo-Inertial/rosario_dataset/Rosario_3_0.yaml -l Examples/ROS/ORB_SLAM3/launch/rosario.launch sequence01.bag
+./run.sh -s Examples/Stereo-Inertial/rosario_dataset/Rosario_3_0.yaml -l Examples/ROS/GNSS_SI/launch/rosario.launch sequence01.bag
 ```
 
 # Yaml Configuration File
